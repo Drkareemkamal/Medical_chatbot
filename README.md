@@ -84,6 +84,12 @@ def create_vector_db():
     
     db = FAISS.from_documents(texts, embeddings)
     db.save_local(DB_FAISS_PATH)
+
+
+if __name__ == '__main__':
+    create_vector_db()
+
+
 ```
 
 **Explanation:**
